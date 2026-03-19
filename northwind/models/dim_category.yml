@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dim_category
+    description: Product category dimension
+    columns:
+      - name: categorykey
+        tests:
+          - not_null
+          - unique
+      - name: categoryid
+        tests:
+          - not_null
+          - unique
